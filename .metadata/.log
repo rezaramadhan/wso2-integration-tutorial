@@ -9074,3 +9074,468 @@ java.net.SocketTimeoutException: Read timed out
 
 !ENTRY org.wso2.tools.eclipse.carbonfeatures 4 0 2017-09-04 20:55:26.969
 !MESSAGE Server port is in use: 9443
+
+!ENTRY org.eclipse.ui 4 0 2017-09-04 20:59:14.114
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4472)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.graphics.GC.setFont(GC.java:4410)
+	at org.eclipse.draw2d.FigureUtilities.setFont(FigureUtilities.java:363)
+	at org.eclipse.draw2d.FigureUtilities.getFontMetrics(FigureUtilities.java:59)
+	at org.eclipse.gmf.tooling.runtime.directedit.locator.TextCellEditorLocator.relocate(TextCellEditorLocator.java:31)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.DirectEditManagerBase$5.ancestorMoved(DirectEditManagerBase.java:507)
+	at org.eclipse.draw2d.AncestorHelper.fireAncestorMoved(AncestorHelper.java:104)
+	at org.eclipse.draw2d.AncestorHelper.figureMoved(AncestorHelper.java:91)
+	at org.eclipse.draw2d.Figure.fireFigureMoved(Figure.java:496)
+	at org.eclipse.draw2d.text.FlowFigure.setBounds(FlowFigure.java:172)
+	at org.eclipse.draw2d.text.InlineFlow.postValidate(InlineFlow.java:169)
+	at org.eclipse.draw2d.text.BlockFlowLayout.endBlock(BlockFlowLayout.java:149)
+	at org.eclipse.draw2d.text.BlockFlowLayout.flush(BlockFlowLayout.java:168)
+	at org.eclipse.draw2d.text.FlowContainerLayout.layout(FlowContainerLayout.java:101)
+	at org.eclipse.draw2d.text.FlowFigureLayout.layout(FlowFigureLayout.java:111)
+	at org.eclipse.draw2d.Figure.layout(Figure.java:1096)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1899)
+	at org.eclipse.draw2d.text.BlockFlow.validate(BlockFlow.java:314)
+	at org.eclipse.draw2d.text.FlowPage.validate(FlowPage.java:150)
+	at org.eclipse.draw2d.text.FlowPage.getPreferredSize(FlowPage.java:85)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel.getPreferredSize(WrappingLabel.java:972)
+	at org.eclipse.draw2d.StackLayout.calculatePreferredSize(StackLayout.java:72)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.draw2d.GridData.computeSize(GridData.java:393)
+	at org.eclipse.draw2d.GridLayout.layout(GridLayout.java:245)
+	at org.eclipse.draw2d.GridLayout.calculatePreferredSize(GridLayout.java:202)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.draw2d.StackLayout.calculatePreferredSize(StackLayout.java:72)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.draw2d.GridData.computeSize(GridData.java:393)
+	at org.eclipse.draw2d.GridLayout.layout(GridLayout.java:245)
+	at org.eclipse.draw2d.GridLayout.calculatePreferredSize(GridLayout.java:202)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.AbstractHintLayout.calculateMinimumSize(AbstractHintLayout.java:56)
+	at org.eclipse.draw2d.AbstractHintLayout.getMinimumSize(AbstractHintLayout.java:73)
+	at org.eclipse.draw2d.Figure.getMinimumSize(Figure.java:782)
+	at org.eclipse.draw2d.ToolbarLayout.getChildMinimumSize(ToolbarLayout.java:210)
+	at org.eclipse.draw2d.ToolbarLayout.calculateChildrenSize(ToolbarLayout.java:94)
+	at org.eclipse.draw2d.ToolbarLayout.calculateMinimumSize(ToolbarLayout.java:134)
+	at org.eclipse.draw2d.AbstractHintLayout.getMinimumSize(AbstractHintLayout.java:73)
+	at org.eclipse.draw2d.Figure.getMinimumSize(Figure.java:782)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderedNodeFigure.getMinimumSize(BorderedNodeFigure.java:178)
+	at org.eclipse.gmf.runtime.diagram.ui.layout.FreeFormLayoutEx.layout(FreeFormLayoutEx.java:51)
+	at org.eclipse.draw2d.Figure$LayoutNotifier.layout(Figure.java:1979)
+	at org.eclipse.draw2d.Figure.layout(Figure.java:1096)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1899)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderItemsAwareFreeFormLayer.validate(BorderItemsAwareFreeFormLayer.java:183)
+	at org.eclipse.draw2d.FreeformViewport$FreeformViewportLayout.calculatePreferredSize(FreeformViewport.java:25)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.figures.OverlayScrollPaneLayout.calculatePreferredSize(OverlayScrollPaneLayout.java:45)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.figures.AnimatableScrollPane.getPreferredSize(AnimatableScrollPane.java:106)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.calculateChildrenSize(ConstrainedToolbarLayout.java:388)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.calculatePreferredSize(ConstrainedToolbarLayout.java:96)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.ResizableCompartmentFigure.getPreferredSize(ResizableCompartmentFigure.java:368)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderedNodeFigure.getPreferredSize(BorderedNodeFigure.java:182)
+	at org.eclipse.draw2d.GridData.computeSize(GridData.java:393)
+	at org.eclipse.draw2d.GridLayout.layout(GridLayout.java:245)
+	at org.eclipse.draw2d.GridLayout.calculatePreferredSize(GridLayout.java:202)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.AbstractHintLayout.calculateMinimumSize(AbstractHintLayout.java:56)
+	at org.eclipse.draw2d.AbstractHintLayout.getMinimumSize(AbstractHintLayout.java:73)
+	at org.eclipse.draw2d.Figure.getMinimumSize(Figure.java:782)
+	at org.eclipse.draw2d.StackLayout.calculateMinimumSize(StackLayout.java:44)
+	at org.eclipse.draw2d.AbstractHintLayout.getMinimumSize(AbstractHintLayout.java:73)
+	at org.eclipse.draw2d.Figure.getMinimumSize(Figure.java:782)
+	at org.eclipse.draw2d.ToolbarLayout.getChildMinimumSize(ToolbarLayout.java:210)
+	at org.eclipse.draw2d.ToolbarLayout.layout(ToolbarLayout.java:328)
+	at org.eclipse.draw2d.Figure.layout(Figure.java:1096)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1899)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderedNodeFigure.validate(BorderedNodeFigure.java:262)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderItemsAwareFreeFormLayer.validate(BorderItemsAwareFreeFormLayer.java:183)
+	at org.eclipse.draw2d.FreeformViewport$FreeformViewportLayout.calculatePreferredSize(FreeformViewport.java:25)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.figures.OverlayScrollPaneLayout.calculatePreferredSize(OverlayScrollPaneLayout.java:45)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.figures.AnimatableScrollPane.getPreferredSize(AnimatableScrollPane.java:106)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.calculateChildrenSize(ConstrainedToolbarLayout.java:388)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.calculatePreferredSize(ConstrainedToolbarLayout.java:96)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.ResizableCompartmentFigure.getPreferredSize(ResizableCompartmentFigure.java:368)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.layout(ConstrainedToolbarLayout.java:203)
+	at org.eclipse.draw2d.Figure.layout(Figure.java:1096)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1899)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderItemsAwareFreeFormLayer.validate(BorderItemsAwareFreeFormLayer.java:183)
+	at org.eclipse.draw2d.FreeformViewport$FreeformViewportLayout.calculatePreferredSize(FreeformViewport.java:25)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.figures.OverlayScrollPaneLayout.calculatePreferredSize(OverlayScrollPaneLayout.java:45)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.draw2d.ui.internal.figures.AnimatableScrollPane.getPreferredSize(AnimatableScrollPane.java:106)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.calculateChildrenSize(ConstrainedToolbarLayout.java:388)
+	at org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout.calculatePreferredSize(ConstrainedToolbarLayout.java:96)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.ResizableCompartmentFigure.getPreferredSize(ResizableCompartmentFigure.java:368)
+	at org.eclipse.draw2d.GridData.computeSize(GridData.java:393)
+	at org.eclipse.draw2d.GridLayout.layout(GridLayout.java:245)
+	at org.eclipse.draw2d.GridLayout.calculatePreferredSize(GridLayout.java:202)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.AbstractHintLayout.calculateMinimumSize(AbstractHintLayout.java:56)
+	at org.eclipse.draw2d.AbstractHintLayout.getMinimumSize(AbstractHintLayout.java:73)
+	at org.eclipse.draw2d.Figure.getMinimumSize(Figure.java:782)
+	at org.eclipse.draw2d.StackLayout.calculateMinimumSize(StackLayout.java:44)
+	at org.eclipse.draw2d.AbstractHintLayout.getMinimumSize(AbstractHintLayout.java:73)
+	at org.eclipse.draw2d.Figure.getMinimumSize(Figure.java:782)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderedNodeFigure.getMinimumSize(BorderedNodeFigure.java:178)
+	at org.eclipse.gmf.runtime.diagram.ui.layout.FreeFormLayoutEx.layout(FreeFormLayoutEx.java:51)
+	at org.eclipse.draw2d.Figure$LayoutNotifier.layout(Figure.java:1979)
+	at org.eclipse.draw2d.Figure.layout(Figure.java:1096)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1899)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderItemsAwareFreeFormLayer.validate(BorderItemsAwareFreeFormLayer.java:183)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart$1.validate(DiagramEditPart.java:157)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.gmf.runtime.diagram.ui.figures.BorderItemsAwareFreeFormLayer.validate(BorderItemsAwareFreeFormLayer.java:183)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.Figure.validate(Figure.java:1901)
+	at org.eclipse.draw2d.FreeformViewport$FreeformViewportLayout.calculatePreferredSize(FreeformViewport.java:25)
+	at org.eclipse.draw2d.AbstractLayout.getPreferredSize(AbstractLayout.java:110)
+	at org.eclipse.draw2d.AbstractHintLayout.getPreferredSize(AbstractHintLayout.java:90)
+	at org.eclipse.draw2d.Figure.getPreferredSize(Figure.java:810)
+	at org.eclipse.draw2d.ScrollPaneSolver.solve(ScrollPaneSolver.java:82)
+	at org.eclipse.draw2d.FigureCanvas.layoutViewport(FigureCanvas.java:325)
+	at org.eclipse.draw2d.FigureCanvas.access$4(FigureCanvas.java:323)
+	at org.eclipse.draw2d.FigureCanvas$3.notifyValidating(FigureCanvas.java:292)
+	at org.eclipse.draw2d.UpdateManager.fireValidating(UpdateManager.java:143)
+	at org.eclipse.draw2d.DeferredUpdateManager.performValidation(DeferredUpdateManager.java:217)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramGraphicalViewer$ToggleUpdateManager.performValidation(DiagramGraphicalViewer.java:116)
+	at org.eclipse.draw2d.DeferredUpdateManager.paint(DeferredUpdateManager.java:167)
+	at org.eclipse.draw2d.LightweightSystem.paint(LightweightSystem.java:203)
+	at org.eclipse.draw2d.LightweightSystem$2.handleEvent(LightweightSystem.java:110)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1512)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4733)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5063)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.wso2.developerstudio.eclipse.gmf.esb.diagram 4 0 2017-09-04 20:59:25.684
+!MESSAGE Error while saving the diagram
+!STACK 0
+org.wso2.developerstudio.eclipse.gmf.esb.persistence.TransformerException: Data Mapper Mediator Configuration is empty, 
+ 
+ Please double click on the datamapper mediator to create a new configuration or add an existing configuration key before saving the ESB Config.
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.DataMapperMediatorTransformer.setConfigKey(DataMapperMediatorTransformer.java:104)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.DataMapperMediatorTransformer.createDataMapperMediator(DataMapperMediatorTransformer.java:45)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.DataMapperMediatorTransformer.transform(DataMapperMediatorTransformer.java:19)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.PropertyMediatorTransformer.transform(PropertyMediatorTransformer.java:63)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.AbstractEsbNodeTransformer.doTransform(AbstractEsbNodeTransformer.java:79)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.APIResourceTransformer.transform(APIResourceTransformer.java:166)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.APITransformer.transform(APITransformer.java:64)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.DefaultEsbModelExporter.transformAPI(DefaultEsbModelExporter.java:326)
+	at org.wso2.developerstudio.eclipse.gmf.esb.internal.persistence.DefaultEsbModelExporter.designToSource(DefaultEsbModelExporter.java:503)
+	at org.wso2.developerstudio.eclipse.gmf.esb.diagram.part.EsbMultiPageEditor.updateAssociatedXMLFile(EsbMultiPageEditor.java:908)
+	at org.wso2.developerstudio.eclipse.gmf.esb.diagram.part.EsbMultiPageEditor.access$14(EsbMultiPageEditor.java:898)
+	at org.wso2.developerstudio.eclipse.gmf.esb.diagram.part.EsbMultiPageEditor$8.run(EsbMultiPageEditor.java:1040)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.wso2.tools.eclipse.platform.core 4 0 2017-09-04 20:59:49.320
+!MESSAGE resource file does not have an extension
+
+!ENTRY org.wso2.tools.eclipse.platform.core 4 0 2017-09-04 20:59:49.579
+!MESSAGE resource file does not have an extension
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.792
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.828
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.863
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.879
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.920
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.936
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.950
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.964
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.981
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:58.995
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:01:59.011
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.008
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.025
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.041
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.058
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.073
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.090
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.106
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.122
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.141
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.156
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.gmf.runtime.draw2d.ui 2 2 2017-09-04 21:02:41.170
+!MESSAGE MapModeUtil#getMapMode(IFigure fig) fig parameter must be attached to a parent - using default MapMode
+
+!ENTRY org.eclipse.ui 4 0 2017-09-04 21:03:52.832
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ClassCastException: org.wso2.developerstudio.datamapper.diagram.edit.parts.DataMapperLinkEditPart$1 cannot be cast to org.eclipse.gmf.runtime.draw2d.ui.figures.IAnchorableFigure
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart.getTargetConnectionAnchor(ConnectionNodeEditPart.java:190)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.GraphicalNodeEditPolicy.getTargetConnectionAnchor(GraphicalNodeEditPolicy.java:251)
+	at org.eclipse.gef.editpolicies.GraphicalNodeEditPolicy.showCreationFeedback(GraphicalNodeEditPolicy.java:287)
+	at org.eclipse.gef.editpolicies.GraphicalNodeEditPolicy.showSourceFeedback(GraphicalNodeEditPolicy.java:298)
+	at org.eclipse.gef.editparts.AbstractEditPart.showSourceFeedback(AbstractEditPart.java:1093)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showSourceFeedback(GraphicalEditPart.java:1380)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.showSourceFeedback(AbstractConnectionCreationTool.java:377)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleMove(AbstractConnectionCreationTool.java:319)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.ConnectionCreationTool.handleMove(ConnectionCreationTool.java:394)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleDrag(AbstractConnectionCreationTool.java:265)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1110)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:259)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:363)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:543)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2017-09-04 21:03:52.842
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ClassCastException: org.wso2.developerstudio.datamapper.diagram.edit.parts.DataMapperLinkEditPart$1 cannot be cast to org.eclipse.gmf.runtime.draw2d.ui.figures.IAnchorableFigure
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart.getTargetConnectionAnchor(ConnectionNodeEditPart.java:190)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.GraphicalNodeEditPolicy.getTargetConnectionAnchor(GraphicalNodeEditPolicy.java:251)
+	at org.eclipse.gef.editpolicies.GraphicalNodeEditPolicy.showCreationFeedback(GraphicalNodeEditPolicy.java:287)
+	at org.eclipse.gef.editpolicies.GraphicalNodeEditPolicy.showSourceFeedback(GraphicalNodeEditPolicy.java:298)
+	at org.eclipse.gef.editparts.AbstractEditPart.showSourceFeedback(AbstractEditPart.java:1093)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showSourceFeedback(GraphicalEditPart.java:1380)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.showSourceFeedback(AbstractConnectionCreationTool.java:377)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleMove(AbstractConnectionCreationTool.java:319)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.ConnectionCreationTool.handleMove(ConnectionCreationTool.java:394)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleDrag(AbstractConnectionCreationTool.java:265)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1110)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:259)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:363)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:543)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2017-09-04 21:03:52.856
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ClassCastException: org.wso2.developerstudio.datamapper.diagram.edit.parts.DataMapperLinkEditPart$1 cannot be cast to org.eclipse.gmf.runtime.draw2d.ui.figures.IAnchorableFigure
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart.getTargetConnectionAnchor(ConnectionNodeEditPart.java:190)
+	at org.eclipse.gmf.runtime.diagram.ui.editpolicies.GraphicalNodeEditPolicy.getTargetConnectionAnchor(GraphicalNodeEditPolicy.java:251)
+	at org.eclipse.gef.editpolicies.GraphicalNodeEditPolicy.showCreationFeedback(GraphicalNodeEditPolicy.java:287)
+	at org.eclipse.gef.editpolicies.GraphicalNodeEditPolicy.showSourceFeedback(GraphicalNodeEditPolicy.java:298)
+	at org.eclipse.gef.editparts.AbstractEditPart.showSourceFeedback(AbstractEditPart.java:1093)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.showSourceFeedback(GraphicalEditPart.java:1380)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.showSourceFeedback(AbstractConnectionCreationTool.java:377)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleMove(AbstractConnectionCreationTool.java:319)
+	at org.eclipse.gmf.runtime.diagram.ui.tools.ConnectionCreationTool.handleMove(ConnectionCreationTool.java:394)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleDrag(AbstractConnectionCreationTool.java:265)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1110)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:259)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:363)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:543)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.wso2.tools.eclipse.platform.core 2 0 2017-09-04 21:06:06.160
+!MESSAGE CApp type "service/dataservice" is already registered with another handler
