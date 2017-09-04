@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<project name="dataservice" default="create-ei-database">
+    <property environment="env"/>
+    <property name="dshome" value="${dshome}"/>
+    <property name="src" value="src"/>
+    <property name="classes" value="${dshome}/samples/data-services/classes"/>
+    <property name="db.dir" value="${dshome}/samples/data-services/database"/>
+    <property name="ds.repository" value="${dshome}/repository/deployment/server/dataservices"/>
+    <property name="basedir" value="${dshome}"/>
+
+    <property name="carbon.home" value="${dshome}"/>
+    <property name="dshome.lib" value="${dshome}/lib"/>
+    <property name="dshome.components.lib" value="${dshome}/lib"/>
+    <property name="ds.product.version" value="2.5.0"/>
+
+    <property name="userid" value="wso2ds"/>
+    <property name="password" value="wso2ds"/>
+
+    <property name="dbURL"
+              value="jdbc:h2:file:${db.dir}/DATA_SERV_QSG"/>
+
+    <path id="all.jar.classpath">
+        <fileset dir="${dshome}/wso2/components/plugins">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="client.class.path">
+        <fileset dir="${dshome}/wso2/components/plugins">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement location="${classes}"/>
+    </path>
+    <target name="clean" description="clean generated artifacts">
+        <delete dir="${db.dir}"/>
+        <delete dir="${qs}"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="${db.dir}"/>
+        <mkdir dir="${classes}"/>
+    </target>
+
+    <target name="create-ei-database" depends="init">
+        <sql driver="org.h2.Driver" url="${dbURL}" userid="${userid}" password="${password}" autocommit="true"
+             onerror="continue">
+            <classpath>
+                <path refid="all.jar.classpath"/>
+            </classpath>
+            <fileset file="Doctors.sql"/>
+        </sql>
+    </target>
+
+    <target name="compile-all" depends="init">
+        <javac debug="on" destdir="${classes}">
+            <src path="${src}"/>
+            <classpath refid="all.jar.classpath"/>
+        </javac>
+    </target>
+    
+</project>
