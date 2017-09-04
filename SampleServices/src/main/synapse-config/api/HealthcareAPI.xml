@@ -14,4 +14,45 @@
         </outSequence>
         <faultSequence/>
     </resource>
+    <resource methods="POST" uri-template="/categories/{category}/reserve">
+        <inSequence>
+            <property description="GetHospital" expression="json-eval($.hospital)" name="Hospital" scope="default" type="STRING"/>
+            <switch source="get-property('Hospital')">
+                <case regex="grand oak community hospital">
+                    <log description="GrandOak" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Hospital')) " name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="GrandOakEP"/>
+                    </send>
+                </case>
+                <case regex="clemency medical center">
+                    <log description="Clemency" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Hospital')) " name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="ClemencyEP"/>
+                    </send>
+                </case>
+                <case regex="pine valley community hospital">
+                    <log description="PineValley" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Hospital')) " name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="PineValleyEP"/>
+                    </send>
+                </case>
+                <default>
+                    <log description="ErrorLog" level="custom">
+                        <property expression="fn:concat('Invalid hospital - ', get-property('Hospital')) " name="message"/>
+                    </log>
+                    <respond/>
+                </default>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
 </api>
