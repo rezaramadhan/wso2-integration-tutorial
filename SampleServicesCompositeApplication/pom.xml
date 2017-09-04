@@ -14,15 +14,47 @@
     <com.example.SampleServicesRegistry.resource_._RequestMapping>capp/EnterpriseServiceBus</com.example.SampleServicesRegistry.resource_._RequestMapping>
     <com.example.SampleServicesRegistry.resource_._RequestMapping_outputSchema>capp/EnterpriseServiceBus</com.example.SampleServicesRegistry.resource_._RequestMapping_outputSchema>
     <com.example.SampleServices.endpoint_._PineValleyEP>capp/EnterpriseServiceBus</com.example.SampleServices.endpoint_._PineValleyEP>
+    <com.example.SampleServices.endpoint_._ChannelingFeeEP>capp/EnterpriseServiceBus</com.example.SampleServices.endpoint_._ChannelingFeeEP>
     <com.example.SampleServices.endpoint_._QueryDoctorEP>capp/EnterpriseServiceBus</com.example.SampleServices.endpoint_._QueryDoctorEP>
-    <com.example.SampleServices.api_._HealthcareAPI>capp/EnterpriseServiceBus</com.example.SampleServices.api_._HealthcareAPI>
+    <com.example.SampleServices.endpoint_._SettlePaymentEP>capp/EnterpriseServiceBus</com.example.SampleServices.endpoint_._SettlePaymentEP>
     <com.example.SampleServices.endpoint_._GrandOakEP>capp/EnterpriseServiceBus</com.example.SampleServices.endpoint_._GrandOakEP>
+    <com.example.SampleServices.api_._HealthcareAPI>capp/EnterpriseServiceBus</com.example.SampleServices.api_._HealthcareAPI>
     <com.example.SampleServicesRegistry.resource_._RequestMapping_inputSchema>capp/EnterpriseServiceBus</com.example.SampleServicesRegistry.resource_._RequestMapping_inputSchema>
   </properties>
   <dependencies>
     <dependency>
+      <groupId>com.example.SampleServicesRegistry.resource</groupId>
+      <artifactId>RequestMapping</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SampleServicesRegistry.resource</groupId>
+      <artifactId>RequestMapping_inputSchema</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SampleServicesRegistry.resource</groupId>
+      <artifactId>RequestMapping_outputSchema</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
       <groupId>com.example.SampleServices.api</groupId>
       <artifactId>HealthcareAPI</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SampleServices.endpoint</groupId>
+      <artifactId>ChannelingFeeEP</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.SampleServices.endpoint</groupId>
+      <artifactId>ClemencyEP</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -46,27 +78,9 @@
     </dependency>
     <dependency>
       <groupId>com.example.SampleServices.endpoint</groupId>
-      <artifactId>ClemencyEP</artifactId>
+      <artifactId>SettlePaymentEP</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.SampleServicesRegistry.resource</groupId>
-      <artifactId>RequestMapping</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.SampleServicesRegistry.resource</groupId>
-      <artifactId>RequestMapping_inputSchema</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.SampleServicesRegistry.resource</groupId>
-      <artifactId>RequestMapping_outputSchema</artifactId>
-      <version>1.0.0</version>
-      <type>zip</type>
     </dependency>
   </dependencies>
   <repositories>
